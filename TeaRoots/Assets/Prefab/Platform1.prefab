@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 50164364846267200}
   - component: {fileID: 251342276278634648}
   - component: {fileID: 61275030227950204}
+  - component: {fileID: 2057113699}
   m_Layer: 0
   m_Name: Platform1
   m_TagString: Untagged
@@ -55,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 547b44778b2394b6e9f158f7ad72f004, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -153,3 +154,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 0.19155383}
   m_EdgeRadius: 0
+--- !u!114 &2057113699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234261072262608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7645f60b7615436990103f15ce62bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbleToKill: 0
+  DropByPlayerTouch: 1
