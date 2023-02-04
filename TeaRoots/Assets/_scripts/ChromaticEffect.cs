@@ -4,31 +4,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.Serialization;
 
-public class BuntEffect1 : MonoBehaviour
+public class ChromaticEffect : MonoBehaviour
 {
     public Volume AllEffects;
-    public ColorAdjustments ColorObj;
-    public float value = -180f;
+    [FormerlySerializedAs("ColorObj")]
+    public ChromaticAberration ChromaticObj;
     public float speed = 1f;
+    private float value = 0f;
     void Start()
     {
-        AllEffects.profile.TryGet(out ColorObj);
+        AllEffects.profile.TryGet(out ChromaticObj);
         enabled = false;
     }
     private void OnEnable()
     {
+        ChromaticObj.intensity.value = 0f;
     }
     private void OnDisable()
     {
-        throw new NotImplementedException();
+        ChromaticObj.intensity.value = 0f;
     }
-
     void Update()
     {
-        if (value >= 180f)
-            value = -180f;
         value += Time.deltaTime * speed;
-        ColorObj.hueShift.value = value;
+        ChromaticObj.intensity.value = value;
     }
 }

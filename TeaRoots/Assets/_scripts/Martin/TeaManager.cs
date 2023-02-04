@@ -28,31 +28,16 @@ public class TeaManager : Singleton<TeaManager>
 
 
     [SerializeField] Volume ppProfile;
-    [SerializeField] Vignette vig;
 
 
     private void Awake()
     {
         ppProfile.profile.TryGet<Vignette>(out var vign);
-        vig = vign;
-        vig.intensity.value = SightStrengthBaseEffect;
         player = FindObjectOfType<Player>();
         platforms = GetComponent<PlatformCollection>();
     }
 
 
-    public void StartSightTeaEffect()
-    {
-        vig.intensity.value = SightStrengthPosEffect;
-
-        Invoke("StartSightNegEffect", SightTeaDuration);
-    }
-
-    public void StartSightNegEffect()
-    {
-        vig.intensity.value = SightStrengthBaseEffect;
-
-    }
 
     // HALLU TEA
     public void StartHalluTeaEffect()

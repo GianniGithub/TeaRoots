@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public KeyCode KeyRight = KeyCode.None;
     public KeyCode KeyJump = KeyCode.None;
 
-    private bool canJump = true;
+    public bool canJump = true;
 
     void Start()
     {

@@ -30,6 +30,7 @@ public class BuntEffect : MonoBehaviour
     private void OnDisable()
     {
         effect.DoSize(false);
+        ColorObj.hueShift.value = 0f;
     }
 
     void Update()

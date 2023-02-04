@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e8cecd70-c0b4-419c-8783-7136fd3fc635" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TeaRoots/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TeaRoots/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Effect Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Effect Test.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Effect Test/PostVolume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Effect Test/PostVolume Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_scripts/BuntEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/BuntEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/BuntEffect1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/BuntEffect1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +21,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/BuntEffect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_scripts/BuntEffect1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_scripts/ChromaticEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/Dropings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_scripts/KloneOma.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/LightLerp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/Martin/TeaComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/Martin/TeaHalluTea.cs" root0="FORCE_HIGHLIGHTING" />
