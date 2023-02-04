@@ -57,7 +57,7 @@ Material:
     - _Death: 0
     - _EnableExternalAlpha: 0
     - _Explosion: 0.01
-    - _Wobble: 0.05
+    - _Wobble: 0.02
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
