@@ -50,10 +50,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 338ffc60dcb074d4090358f74a9110ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpStrength: 400
-  Speed: 5
   rb: {fileID: 50424662812172216}
   anim: {fileID: 95357344449612784}
+  mat: {fileID: 2100000, guid: e34ef25794bbf479993c26e508888f7a, type: 2}
+  JumpStrength: 400
+  Speed: 5
+  Wobble: 0
   KeyLeft: 97
   KeyRight: 100
   KeyJump: 119
@@ -77,7 +79,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 547b44778b2394b6e9f158f7ad72f004, type: 2}
+  - {fileID: 2100000, guid: e34ef25794bbf479993c26e508888f7a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
