@@ -25,8 +25,6 @@ public class Plattform : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            if(AbleToKill)
-                MainEvents.Instance.OnPlayerDaid();
             
             if (DropByPlayerTouch)
             {

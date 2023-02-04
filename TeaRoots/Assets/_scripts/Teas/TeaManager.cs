@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using QMGC.WallDemolition.internet;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
 
-public class TeaManager : Singleton<TeaManager>
+public class TeaManager : MonoBehaviour
 {
-
+    public static TeaManager Instance { get; private set; }
     [SerializeField] int SightTeaDuration = 5;
     [SerializeField] int HalluTeaDuration = 5;
     [SerializeField] int SpeedTeaDuration = 5;
@@ -19,10 +18,10 @@ public class TeaManager : Singleton<TeaManager>
     [SerializeField] float SightStrengthBaseEffect = 0.75f;
     //[SerializeField] float SightStrengthNegEffect = 0.6f;
     [SerializeField] float SpeedStrengthPosEffect = 1.7f;
-    [SerializeField] float GravityStrengthPosEffect = 3f;
+    [SerializeField] float GravityStrengthPosEffect = -5f;
     [SerializeField] float SloMoStrengthPosEffect = 0.3f;
+    [SerializeField] List<GameObject> InvisiblePlatforms;
 
-    public PlatformCollection platforms;
 
     public Player player;
 
@@ -30,26 +29,48 @@ public class TeaManager : Singleton<TeaManager>
     [SerializeField] Volume ppProfile;
 
 
+
     private void Awake()
     {
         ppProfile.profile.TryGet<Vignette>(out var vign);
+
         player = FindObjectOfType<Player>();
-        platforms = GetComponent<PlatformCollection>();
+        //InvisiblePlatforms = new List<GameObject>();
+
+
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
     }
 
-
+    //private void Start()
+    //{
+    //    InvisiblePlatforms.Add(GameObject.FindGameObjectWithTag("Invisible"));
+    //}
 
     // HALLU TEA
     public void StartHalluTeaEffect()
     {
         Debug.Log("Hallu triggered");
-        //Debug.Log(InvisiblePlatforms[0]);
-        platforms.enabled = true;
+
+        foreach (GameObject go in InvisiblePlatforms)
+        {
+            go.SetActive(true);
+        }
+        Invoke("StartHalluNegEffect", HalluTeaDuration);
     }
 
     public void StartHalluNegEffect()
     {
-        platforms.enabled = false;
+        foreach (var go in InvisiblePlatforms)
+        {
+            go.SetActive(false);
+        }
     }
 
     // SPEED TEA
@@ -66,16 +87,16 @@ public class TeaManager : Singleton<TeaManager>
         player.Speed = player.Speed / SpeedStrengthPosEffect;
     }
 
-    public void StartGravityJumpTeaEffect()
+    public void StartGravityTeaEffect()
     {
-        Physics2D.gravity = new Vector2(0, 9.81f/ GravityStrengthPosEffect);
+        Physics2D.gravity = new Vector2(0, GravityStrengthPosEffect);
 
         Invoke("StartGravityNegEffect", GravTeaDuration);
     }
 
     public void StartGravityNegEffect()
     {
-        Physics2D.gravity = new Vector2(0, 9.81f * GravityStrengthPosEffect);
+        Physics2D.gravity = new Vector2(0, -9.81f);
 
     }
 
