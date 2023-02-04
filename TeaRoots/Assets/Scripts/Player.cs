@@ -31,13 +31,13 @@ public class Player : MonoBehaviour
         {
             rb.velocity = new Vector2(-Speed, rb.velocity.y);
             anim.SetBool("walk", true);
-            transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
+            //transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
         }
         else if (Input.GetKey(KeyRight))
         {
             rb.velocity = new Vector2(Speed, rb.velocity.y);
             anim.SetBool("walk", true);
-            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            //transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         }
         else
         {
