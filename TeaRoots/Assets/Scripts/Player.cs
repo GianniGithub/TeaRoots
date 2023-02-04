@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float JumpStrength = 50;
-    public float Speed = 10;
+    [Header("References")]
     public Rigidbody2D rb;
     public Animator anim;
+    public Material mat;
+    [Header("Settings")]
+    public float JumpStrength = 50f;
+    public float Speed = 10f;
+    public float Wobble = 0f;
     public KeyCode KeyLeft = KeyCode.None;
     public KeyCode KeyRight = KeyCode.None;
     public KeyCode KeyJump = KeyCode.None;
@@ -17,6 +21,10 @@ public class Player : MonoBehaviour
     void Start()
     {
 
+    }
+
+    void Update(){
+        mat.SetFloat("_Wobble", Wobble / 100f);
     }
 
     void FixedUpdate()
