@@ -7,24 +7,28 @@ public class Player : MonoBehaviour
     [Header("References")]
     public Rigidbody2D rb;
     public Animator anim;
-    public Material mat;
+    public SpriteRenderer sprite;
     [Header("Settings")]
     public float JumpStrength = 50f;
     public float Speed = 10f;
     public float Wobble = 0f;
+    public float Death = 0f;
     public KeyCode KeyLeft = KeyCode.None;
     public KeyCode KeyRight = KeyCode.None;
     public KeyCode KeyJump = KeyCode.None;
 
     public bool canJump = true;
 
+    private Material mat;
+
     void Start()
     {
-
+        mat = sprite.material;
     }
 
     void Update(){
         mat.SetFloat("_Wobble", Wobble / 100f);
+        mat.SetFloat("_Death", Death);
     }
 
     void FixedUpdate()
