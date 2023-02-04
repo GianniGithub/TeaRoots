@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class TeaComponent : MonoBehaviour
+public class TeaHalluTea : MonoBehaviour
 {
-
-    public UnityEvent teaEffectMethod;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Tea!");
-        teaEffectMethod.Invoke();
+        TeaManager.Instance.StartHalluTeaEffect();
     }
 
 

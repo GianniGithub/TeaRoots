@@ -3,23 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e8cecd70-c0b4-419c-8783-7136fd3fc635" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TeaRoots/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TeaRoots/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Background.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Background.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Deko.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Deko.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Droping.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Droping.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Ground.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Ground.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Platform1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Platform1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Platform2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Platform2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Platform3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Platform3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Tea.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Tea.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Effect_Test.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Effect_Test.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Martin/HalluTea.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Martin/HalluTea.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Martin/SightTea.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Martin/SightTea.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Martin/TeaManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Martin/TeaManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Martin/TeaComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Martin/TeaComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Martin/TeaComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Martin/TeaComponent.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +20,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/BuntEffect1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/Dropings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/Martin/TeaComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_scripts/Martin/TeaHalluTea.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/PlatformCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/Plattform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -107,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675507864549</updated>
-      <workItem from="1675507866371" duration="10381000" />
+      <workItem from="1675507866371" duration="12610000" />
     </task>
     <servers />
   </component>
