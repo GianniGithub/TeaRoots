@@ -34,6 +34,10 @@ public class Dropings : MonoBehaviour
         {
             MainEvents.Instance.OnPlayerDaid();
         }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     
 }

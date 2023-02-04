@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8cecd70-c0b4-419c-8783-7136fd3fc635" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/MainEvents.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/MainEvents.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TeaRoots/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TeaRoots/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Dropings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Dropings.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675507864549</updated>
-      <workItem from="1675507866371" duration="3066000" />
+      <workItem from="1675507866371" duration="3611000" />
     </task>
     <servers />
   </component>
