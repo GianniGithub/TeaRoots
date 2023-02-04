@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DoubleJump
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2114660853
+    locked: 0
+  - name: Deco
+    uniqueID: 2334332667
+    locked: 0
+  - name: Objects
+    uniqueID: 2068310895
+    locked: 0
+  - name: Units
+    uniqueID: 760624117
     locked: 0
