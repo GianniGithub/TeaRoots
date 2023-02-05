@@ -9,7 +9,7 @@ public class Sound : MonoBehaviour
     public static Sound Instance { get; private set; }
 
     public AudioSource Soundtrack_High;
-    public AudioSource Soundtrack_Nüchtern;
+    public AudioSource Soundtrack_NÃ¼chtern;
     public AudioSource Soundtrack_Atmospheric;
     public AudioSource SoundEffect_Click;
     public AudioSource SoundEffect_FallingLog;
