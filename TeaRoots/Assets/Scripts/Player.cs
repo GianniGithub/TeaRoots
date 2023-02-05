@@ -20,8 +20,6 @@ public class Player : MonoBehaviour
     
     private Material mat;
 
-    private Material mat;
-
     void Start()
     {
         mat = sprite.material;
@@ -64,6 +62,10 @@ public class Player : MonoBehaviour
         }
 
         anim.SetBool("jump", !canJump);
+
+        if(!canJump){
+            Sound.Instance.SoundEffect_Walk.volume = 0f;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
