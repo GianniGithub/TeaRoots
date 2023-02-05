@@ -7,14 +7,21 @@ using UnityEngine.Events;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-public class BuntEffect : Singleton<BuntEffect>
+public class BuntEffect : MonoBehaviour
 {
+    public static BuntEffect Instance;
+
     public Volume AllEffects;
     public ColorAdjustments ColorObj;
     public float value = -180f;
     public float speed = 1f;
     public LightLerp effect;
     
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     void Start()
     {
         AllEffects.profile.TryGet(out ColorObj);
