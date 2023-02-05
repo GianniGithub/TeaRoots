@@ -1,32 +1,30 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Gianni.Helper;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class KloneOma : MonoBehaviour
+public class KloneOma : QMGC.WallDemolition.internet.Singleton<KloneOma>
 {
     private float t;
     public float CloneSpeedRate;
     public Player PlayerPrefap;
-    [SerializeField]
+    public Transform Player;
+    public float Duration;
+
 
     private void OnEnable()
     {
-
+        this.InvokeWait(Duration, () => enabled = false);
     }
-    private void OnDisable()
-    {
-
-    }
-    // Update is called once per frame
     void Update()
     {
         t += Time.deltaTime;
         if (t > CloneSpeedRate)
         {
             t -= CloneSpeedRate;
-            var pl = Instantiate(PlayerPrefap, transform.position, Quaternion.identity);
+            var pl = Instantiate(PlayerPrefap, Player.transform.position, Quaternion.identity);
             var au = pl.AddComponent<AutoRunner>();
             au.SetUp(pl);
         }

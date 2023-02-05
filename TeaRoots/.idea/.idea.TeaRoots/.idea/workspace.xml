@@ -7,9 +7,13 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Effect Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Effect Test.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Effect Test/PostVolume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Effect Test/PostVolume Profile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/AutoRunner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/AutoRunner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_scripts/BuntEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/BuntEffect.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_scripts/BuntEffect1.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_scripts/BuntEffect1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/KloneOma.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/KloneOma.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Teas/SpeedTea.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Teas/SpeedTea.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Teas/SpeedTeaComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Teas/SpeedTeaComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
@@ -30,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/PlatformCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/Plattform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_scripts/Teas/ReSpown.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -124,5 +129,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Frame#TeeSicht.OnTriggerEnter2D" memberName="this" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

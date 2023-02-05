@@ -34,7 +34,7 @@ public class AutoRunner : MonoBehaviour
         ple.enabled = false;
         this.InvokeWait(4f, () => Destroy(ple.gameObject));
         SetTimings();
-        
+        gameObject.tag = "Untagged";
 
     }
     void SetTimings()
