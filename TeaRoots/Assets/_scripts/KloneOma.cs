@@ -5,14 +5,19 @@ using Gianni.Helper;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class KloneOma : QMGC.WallDemolition.internet.Singleton<KloneOma>
+public class KloneOma : MonoBehaviour
 {
     private float t;
     public float CloneSpeedRate;
     public Player PlayerPrefap;
     public Transform Player;
     public float Duration;
+    public static KloneOma Instance;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void OnEnable()
     {

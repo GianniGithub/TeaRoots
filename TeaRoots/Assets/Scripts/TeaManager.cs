@@ -49,6 +49,7 @@ public class TeaManager : MonoBehaviour
     // HALLU TEA
     public void StartHalluTeaEffect()
     {
+        
         Debug.Log("Hallu triggered");
         Sound.Instance.SoundEffect_Drink.Play();
         Sound.Instance.Soundtrack_High.volume = 1f;
@@ -85,6 +86,7 @@ public class TeaManager : MonoBehaviour
 
     public void StartGravityTeaEffect()
     {
+        KloneOma.Instance.enabled = true;
         Physics2D.gravity = new Vector2(0, GravityStrengthPosEffect);
 
         Invoke("StartGravityNegEffect", GravTeaDuration);
