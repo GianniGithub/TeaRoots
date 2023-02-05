@@ -38,14 +38,7 @@ public class TeaManager : MonoBehaviour
         //InvisiblePlatforms = new List<GameObject>();
 
 
-        if (Instance != null && Instance != this)
-        {
-            Destroy(this);
-        }
-        else
-        {
-            Instance = this;
-        }
+        Instance = this;
     }
 
     //private void Start()
