@@ -34,6 +34,8 @@ public class Health : MonoBehaviour
         {
             Sound.Instance.Soundtrack_High.volume = 0;
             Sound.Instance.SoundEffect_Ded.Play();
+
+            Time.timeScale = 0f;
         }
     }
 }

@@ -29,7 +29,6 @@ public class HealthUI : MonoBehaviour
             healthbarslider.value = 0f;
 
             gameOverCanvas.gameObject.SetActive(true);
-            Time.timeScale = 0f;
         }
     }
 }

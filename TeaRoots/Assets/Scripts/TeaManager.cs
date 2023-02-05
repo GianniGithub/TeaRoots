@@ -122,7 +122,6 @@ public class TeaManager : MonoBehaviour
 		Debug.Log("test");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1f;
-        //reload and set timescale to 1
     }
 
 }
