@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-   
     public int health=3;
     Vector3 respawnCoordinates;
 
