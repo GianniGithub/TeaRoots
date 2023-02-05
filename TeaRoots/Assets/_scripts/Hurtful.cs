@@ -13,9 +13,12 @@ public class Hurtful : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("damaged");
-        
-        health.GotDamaged();
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("damaged");
+            health.GotDamaged();
+        }
+      
     }
 
 }
