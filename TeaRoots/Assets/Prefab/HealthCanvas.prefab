@@ -329,6 +329,7 @@ GameObject:
   - component: {fileID: 4392750955709303719}
   - component: {fileID: 4392750955709303718}
   - component: {fileID: 4392750955709303713}
+  - component: {fileID: 26925581681884321}
   m_Layer: 5
   m_Name: HealthCanvas
   m_TagString: Untagged
@@ -418,6 +419,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &26925581681884321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4392750955709303712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606df25f0fcc53d6d81f4d7b205c73cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthbarslider: {fileID: 4392750955016354563}
+  health: {fileID: 0}
 --- !u!1 &4392750955833574890
 GameObject:
   m_ObjectHideFlags: 0
