@@ -175,6 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45bcf326047cf4340a13b19395696fc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player: {fileID: 4660163713104952, guid: 5994b23a3b7197643840c4d099fc0776, type: 3}
   TriggerDistansToX: 1
   DistanzToX: 0
