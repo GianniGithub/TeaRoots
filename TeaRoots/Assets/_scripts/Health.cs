@@ -40,10 +40,13 @@ public class Health : MonoBehaviour
 
         if (health > 0)
         {
+            Sound.Instance.SoundEffect_Hurt.Play();
             gameObject.transform.position = respawnCoordinates;
         }
         else
         {
+            Sound.Instance.Soundtrack_High.volume = 0;
+            Sound.Instance.SoundEffect_Ded.Play();
              Dead();
         }
     }

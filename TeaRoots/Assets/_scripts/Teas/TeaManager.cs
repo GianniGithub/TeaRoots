@@ -57,6 +57,8 @@ public class TeaManager : MonoBehaviour
     public void StartHalluTeaEffect()
     {
         Debug.Log("Hallu triggered");
+        Sound.Instance.SoundEffect_Drink.Play();
+        Sound.Instance.Soundtrack_High.volume = 1f;
 
         foreach (GameObject go in InvisiblePlatforms)
         {
@@ -67,6 +69,7 @@ public class TeaManager : MonoBehaviour
 
     public void StartHalluNegEffect()
     {
+        Sound.Instance.Soundtrack_High.volume = 0f;
         foreach (var go in InvisiblePlatforms)
         {
             go.SetActive(false);
