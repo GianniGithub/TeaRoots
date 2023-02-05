@@ -1,23 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using QMGC.WallDemolition.internet;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-public class BuntEffect : MonoBehaviour
+public class BuntEffect : Singleton<BuntEffect>
 {
     public Volume AllEffects;
     public ColorAdjustments ColorObj;
     public float value = -180f;
     public float speed = 1f;
-    private LightLerp effect;
-
-    private void Awake()
-    {
-        effect = GetComponent<LightLerp>();
-    }
+    public LightLerp effect;
+    
     void Start()
     {
         AllEffects.profile.TryGet(out ColorObj);

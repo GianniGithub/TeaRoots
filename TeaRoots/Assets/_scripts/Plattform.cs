@@ -25,11 +25,10 @@ public class Plattform : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            if(AbleToKill)
-                MainEvents.Instance.OnPlayerDaid();
             
             if (DropByPlayerTouch)
             {
+                Sound.Instance.SoundEffect_FallingLog.Play();
                 rb.bodyType = RigidbodyType2D.Dynamic;
             }
         }

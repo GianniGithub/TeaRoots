@@ -28,16 +28,5 @@ public class Dropings : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Dynamic;
         }
     }
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "Player")
-        {
-            MainEvents.Instance.OnPlayerDaid();
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
     
 }

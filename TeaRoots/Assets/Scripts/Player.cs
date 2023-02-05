@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     
     private Material mat;
 
+    private Material mat;
+
     void Start()
     {
         mat = sprite.material;
@@ -34,6 +36,8 @@ public class Player : MonoBehaviour
     {
         if(canJump == true && Input.GetKey(KeyJump))
         {
+            Sound.Instance.SoundEffect_Jump.Play();
+            Sound.Instance.SoundEffect_Walk.volume = 0f;
             rb.AddForce(new Vector2(0f, JumpStrength));
             canJump = false;
         }
@@ -43,17 +47,20 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(-Speed, rb.velocity.y);
             anim.SetBool("walk", true);
             transform.localScale = new Vector3(-1f, 1f, 1f);
+            Sound.Instance.SoundEffect_Walk.volume = 0.3f;
         }
         else if (Input.GetKey(KeyRight))
         {
             rb.velocity = new Vector2(Speed, rb.velocity.y);
             anim.SetBool("walk", true);
             transform.localScale = new Vector3(1f, 1f, 1f);
+            Sound.Instance.SoundEffect_Walk.volume = 0.3f;
         }
         else
         {
             rb.velocity = new Vector2(0f, rb.velocity.y);
             anim.SetBool("walk", false);
+            Sound.Instance.SoundEffect_Walk.volume = 0f;
         }
 
         anim.SetBool("jump", !canJump);
