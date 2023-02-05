@@ -70,6 +70,8 @@ public class Health : MonoBehaviour
     private void Dead()
     {
         gameOverCanvas.gameObject.SetActive(true);
+        Sound.Instance.Soundtrack_High.volume =0f;
+        Sound.Instance.Soundtrack_Nüchtern.volume = 0f;
         Time.timeScale = 0f;
         // stop time or inputs
     }
