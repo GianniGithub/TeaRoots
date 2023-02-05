@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
-
+using UnityEngine.SceneManagement;
 
 public class TeaManager : MonoBehaviour
 {
@@ -117,6 +117,12 @@ public class TeaManager : MonoBehaviour
 
     }
 
-
+    public void ReloadScene()
+    {
+		Debug.Log("test");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
+        //reload and set timescale to 1
+    }
 
 }

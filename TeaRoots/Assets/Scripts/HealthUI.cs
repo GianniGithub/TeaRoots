@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HealthUI : MonoBehaviour
 {
+    public Canvas gameOverCanvas;
     public Slider healthbarslider;
     public Health health;
 
@@ -26,6 +27,9 @@ public class HealthUI : MonoBehaviour
         else if (health.health==0)
         {
             healthbarslider.value = 0f;
+
+            gameOverCanvas.gameObject.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 }

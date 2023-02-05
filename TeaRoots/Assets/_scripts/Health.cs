@@ -10,8 +10,6 @@ public class Health : MonoBehaviour
    
     public int health=3;
     Vector3 respawnCoordinates;
-    public GameObject healthbar;
-    public Canvas gameOverCanvas;
 
     private void Start()
     {
@@ -37,22 +35,6 @@ public class Health : MonoBehaviour
         {
             Sound.Instance.Soundtrack_High.volume = 0;
             Sound.Instance.SoundEffect_Ded.Play();
-             Dead();
         }
-    }
-
-    private void Dead()
-    {
-        gameOverCanvas.gameObject.SetActive(true);
-        Time.timeScale = 0f;
-        // stop time or inputs
-    }
-
-    public void ReloadScene()
-    {
-		Debug.Log("test");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Time.timeScale = 1f;
-        //reload and set timescale to 1
     }
 }
