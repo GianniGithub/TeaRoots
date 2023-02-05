@@ -5,16 +5,17 @@ using UnityEngine.Events;
 
 public class GravityTeaComponent : MonoBehaviour
 {
-    
+    public int respawntime=18;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Tea!");
         TeaManager.Instance.StartGravityTeaEffect();
+        this.gameObject.SetActive(false);
+        Invoke("DelayedReactivation", respawntime);
     }
 
-
-
-
-
+    public void DelayedReactivation()
+    {
+        this.gameObject.SetActive(true);
+    }
 }
